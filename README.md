@@ -1,1 +1,1 @@
-# Gest-o-de-OKRS
+# Gestao-de-OKRS
