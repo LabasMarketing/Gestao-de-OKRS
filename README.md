@@ -11,7 +11,7 @@ Projeto desenvolvido para a disciplina de **Programação de Sistemas II**, com 
 ---
 
 ## 🛠️ Etapas do Desenvolvimento
-#### 🗄️ Banco de Dados com Supabase
+### 🗄️ Banco de Dados com Supabase
 
 O projeto utiliza o [Supabase](https://supabase.com/) como provedor de banco de dados. Ele oferece uma instância de PostgreSQL gerenciado na nuvem, à qual o back-end em Spring Boot se conecta via JDBC.
 
@@ -20,6 +20,9 @@ A string de conexão está configurada no arquivo `application.properties`, cont
 - Usuário e senha fornecidos pelo Supabase
 
 Isso nos permitiu utilizar todas as vantagens do PostgreSQL sem necessidade de hospedar o banco manualmente.
+
+![image](https://github.com/user-attachments/assets/c532b070-3cf0-4b0a-8890-f0c77a99dc53)
+
 
 ### ⚙️ Back-end
 
