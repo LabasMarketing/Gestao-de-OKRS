@@ -6,7 +6,7 @@ Projeto desenvolvido para a disciplina de **Programação de Sistemas II**, com 
 
 - Gabriel Labarca Del Bianco  
 - Gustavo Netto de Carvalho  
-- Caio Caramés Lanzelotti da Silva  
+- Caio Caramés Lanzelotti da Silva
 
 ---
 
@@ -22,7 +22,6 @@ A string de conexão está configurada no arquivo `application.properties`, cont
 Isso nos permitiu utilizar todas as vantagens do PostgreSQL sem necessidade de hospedar o banco manualmente.
 
 ![image](https://github.com/user-attachments/assets/c532b070-3cf0-4b0a-8890-f0c77a99dc53)
-
 
 ### ⚙️ Back-end
 
