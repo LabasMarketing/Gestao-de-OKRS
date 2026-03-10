@@ -5,8 +5,8 @@ Projeto desenvolvido para a disciplina de **Programação de Sistemas II**, com 
 ## 👨‍💻 Desenvolvedores
 
 - Gabriel Labarca Del Bianco  
-- Gustavo Netto de Carvalho  
-- Caio Caramés Lanzelotti da Silva
+- [Gustavo Netto de Carvalho](https://github.com/gustavonc05)
+- [Caio Caramés Lanzelotti da Silva](https://github.com/caiocarames)
 
 ---
 
