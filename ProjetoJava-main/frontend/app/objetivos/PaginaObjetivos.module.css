@@ -1,0 +1,189 @@
+.add_button {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #1c4985;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  left: 1150px;
+  top: 60px;
+  text-decoration: none;
+}
+.add_obj {
+  position: relative;
+  left: 1200px;
+  top: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.filtroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  margin: 30px 0;
+}
+
+.filtroTitulo {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: border 0.3s;
+}
+
+.select:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.card {
+  position: relative;
+  left: 440px;
+  top: -30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.objetivos {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons button {
+  padding: 6px 12px;
+  margin-left: 6px;
+  font-size: 14px;
+  border: none;
+  background-color: #1c4985;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button_desa button{
+  padding: 6px 12px;
+  margin-left: 6px;
+  font-size: 14px;
+  border: none;
+  background-color: #1c4985;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  bottom: 50px;
+  left: 310px;
+  
+}
+
+.objective_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.progress_bar_obj {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.progress_bar_kr {
+  width: 50%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.progress_bar_ini {
+  width: 25%;
+  position: absolute;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.ini_titulo {
+  position: relative;
+  bottom: 25px;
+}
+.porcentagem_ini {
+  font-size: 14px;
+  color: #6b7280;
+  margin-left: 8px;
+  position:relative;
+  bottom: 25px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #10b981;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.kr {
+  margin-bottom: 20px;
+}
+
+.kr_title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.kr_title span {
+  font-weight: normal;
+}
+
+.lista_bola {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+}
+
+.lista_num {
+  margin-bottom: 6px;
+  display: flex;
+  position: relative;
+  bottom: 40px;
+  align-items: center;
+}
+
+.percentage {
+  font-size: 14px;
+  color: #6b7280;
+  margin-left: 8px;
+}
