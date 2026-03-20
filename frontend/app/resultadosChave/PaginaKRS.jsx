@@ -8,7 +8,7 @@ export default function PaginaKRS() {
   const [resultadosChave, setResultadosChave] = useState([]);
   const [selectedId, setSelectedId] = useState("Todos");
 
-  const BASE_URL = "/api/backend";
+  const BASE_URL = "/api";
 
   // Função para chamar a API e buscar os resultadosChave
   async function chamarAPIResultadosChave() {

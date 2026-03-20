@@ -8,7 +8,7 @@ export default function PaginaObjetivos() {
   const [objetivos, setObjetivos] = useState([]);
   const [selectedId, setSelectedId] = useState("Todos");
 
-  const BASE_URL = "/api/backend";
+  const BASE_URL = "/api";
 
   // Função para chamar a API e buscar os Objetivos
   async function chamarAPIObjetivo() {

@@ -11,7 +11,7 @@ export default function CadastroKRS() {
     iniciativas: []
   });
 
-  const BASE_URL = "/api/backend";
+  const BASE_URL = "/api";
 
   // Função para postar novo resultado chave
   async function chamarAPIPostResultadoChave() {

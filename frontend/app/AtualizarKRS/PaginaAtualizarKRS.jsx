@@ -11,7 +11,7 @@ export default function AtualizarKRS() {
     iniciativas: []
   });
 
-  const BASE_URL = "/api/backend";
+  const BASE_URL = "/api";
 
   // Nova Função que busca dados pelo id
   useEffect(() => {

@@ -8,7 +8,7 @@ export default function CadastroIniciativas() {
     descricao: ''
   });
 
-  const BASE_URL = "/api/backend";
+  const BASE_URL = "/api";
 
   // Função para chamar a API e postar as iniciativas(POST)
   async function chamarAPIPostIniciativas() {

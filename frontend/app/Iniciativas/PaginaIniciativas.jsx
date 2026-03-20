@@ -8,7 +8,7 @@ export default function PaginaIniciativas() {
   const [iniciativas, setIniciativas] = useState([]);
   const [selectedId, setSelectedId] = useState("Todos");
 
-  const BASE_URL = "/api/backend";
+  const BASE_URL = "/api";
 
   // Função para chamar a API e buscar as iniciativas
   async function chamarAPIIniciativas() {

@@ -11,7 +11,7 @@ export default function CadastroObjetivos() {
     resultadosChaves: []
   });
 
-  const BASE_URL = "/api/backend";
+  const BASE_URL = "/api";
   
   // Função para postar novo Objetivo
   async function chamarAPIPostObjetivos() {
