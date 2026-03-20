@@ -10,7 +10,7 @@ export default function AtualizarObjetivos() {
     resultadosChaves: []
   });
 
-  const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://192.168.0.90:25000";
+  const BASE_URL = "/api/backend";
 
   // Nova Função que busca dados pelo id
   useEffect(() => {

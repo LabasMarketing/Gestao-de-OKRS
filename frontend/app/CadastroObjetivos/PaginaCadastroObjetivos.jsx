@@ -11,7 +11,7 @@ export default function CadastroObjetivos() {
     resultadosChaves: []
   });
 
-  const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://192.168.0.90:25000";
+  const BASE_URL = "/api/backend";
   
   // Função para postar novo Objetivo
   async function chamarAPIPostObjetivos() {

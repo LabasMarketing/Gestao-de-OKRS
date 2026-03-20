@@ -8,7 +8,7 @@ export default function CadastroIniciativas() {
     descricao: ''
   });
 
-  const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://192.168.0.90:25000";
+  const BASE_URL = "/api/backend";
 
   // Função para chamar a API e postar as iniciativas(POST)
   async function chamarAPIPostIniciativas() {

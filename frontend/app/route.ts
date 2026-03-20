@@ -22,7 +22,7 @@ async function handleRequest(request: NextRequest, { params }: { params: { path:
     };
 
     // Se a requisição tiver corpo (POST/PUT), nós o repassamos
-    if (['POST', 'PUT', 'GET', 'DELETE  '].includes(method)) {
+    if (['POST', 'PUT', 'PATCH'].includes(method)) {
       const body = await request.json();
       fetchOptions.body = JSON.stringify(body);
     }

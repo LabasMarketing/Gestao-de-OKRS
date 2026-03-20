@@ -8,7 +8,7 @@ export default function PaginaKRS() {
   const [resultadosChave, setResultadosChave] = useState([]);
   const [selectedId, setSelectedId] = useState("Todos");
 
-  const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://192.168.0.90:25000";
+  const BASE_URL = "/api/backend";
 
   // Função para chamar a API e buscar os resultadosChave
   async function chamarAPIResultadosChave() {
