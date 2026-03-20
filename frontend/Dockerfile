@@ -4,8 +4,7 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
-ARG NEXT_PUBLIC_API_URL
-ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=http://172.31.136.143:25000
 
 RUN npm run build
 
