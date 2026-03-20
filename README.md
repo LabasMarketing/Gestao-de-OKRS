@@ -354,3 +354,4 @@ Este projeto foi uma excelente oportunidade para:
 - Node.js 16+
 - Supabase (como banco de dados PostgreSQL)
 - Git
+- Docker
