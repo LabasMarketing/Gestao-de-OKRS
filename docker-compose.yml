@@ -13,6 +13,7 @@ services:
       - SPRING_DATASOURCE_PASSWORD=Xl2sgBJ3DBZ0pmTI
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
+    restart: always
   frontend:
     build: ./frontend
     container_name: okr_frontend
@@ -27,3 +28,4 @@ services:
     environment:
       - WATCHPACK_POLLING=true
       - BACKEND_PRIVATE_IP=172.31.136.143
+    restart: always
