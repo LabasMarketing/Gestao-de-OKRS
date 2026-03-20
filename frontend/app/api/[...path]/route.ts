@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 async function handleRequest(request: NextRequest, props: { params: Promise<{ path: string[] }> }) {
-  // No Next.js 15, params é uma Promise e deve ser aguardada (await)
   const { path } = await props.params;
   
-  // Usando o IP que você já fixou no Dockerfile
+  // GARANTIA: Se o primeiro item for 'api', a gente remove ele antes de mandar pro backend
+  const realPath = path[0] === 'api' ? path.slice(1) : path;
+  
   const BACKEND_IP = '172.31.136.143'; 
-  const targetUrl = `http://${BACKEND_IP}:25000/${path.join('/')}`;
+  const targetUrl = `http://${BACKEND_IP}:25000/${realPath.join('/')}`;
 
   const method = request.method;
 
