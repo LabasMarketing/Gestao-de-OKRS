@@ -1,1 +1,7 @@
+node_modules/
 .next/
+target/
+.vscode/
+dist/
+build/
+*.log
