@@ -1,17 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// Função genérica para lidar com as requisições (Proxy)
-async function handleRequest(request: NextRequest, { params }: { params: { path: string[] } }) {
-  const { path } = params;
+async function handleRequest(request: NextRequest, props: { params: Promise<{ path: string[] }> }) {
+  // No Next.js 15, params é uma Promise e deve ser aguardada (await)
+  const { path } = await props.params;
   
-  // Pegamos o IP Privado da variável de ambiente que definiremos no Docker
-  // Se não houver, ele tenta usar o localhost (para testes locais)
-  const BACKEND_IP = process.env.BACKEND_PRIVATE_IP || 'localhost';
+  // Usando o IP que você já fixou no Dockerfile
+  const BACKEND_IP = '172.31.136.143'; 
   const targetUrl = `http://${BACKEND_IP}:25000/${path.join('/')}`;
 
   const method = request.method;
-  const headers = new Headers(request.headers);
-  headers.delete('host'); // Evita conflitos de cabeçalho na AWS
 
   try {
     const fetchOptions: RequestInit = {
@@ -21,7 +18,6 @@ async function handleRequest(request: NextRequest, { params }: { params: { path:
       },
     };
 
-    // Se a requisição tiver corpo (POST/PUT), nós o repassamos
     if (['POST', 'PUT', 'PATCH'].includes(method)) {
       const body = await request.json();
       fetchOptions.body = JSON.stringify(body);
@@ -29,7 +25,6 @@ async function handleRequest(request: NextRequest, { params }: { params: { path:
 
     const res = await fetch(targetUrl, fetchOptions);
 
-    // Se o backend retornar erro, repassamos o erro
     if (!res.ok) {
       return NextResponse.json(
         { error: `Erro no Backend: ${res.statusText}` },
@@ -49,7 +44,6 @@ async function handleRequest(request: NextRequest, { params }: { params: { path:
   }
 }
 
-// Exportamos os métodos que seu sistema usa
 export const GET = handleRequest;
 export const POST = handleRequest;
 export const DELETE = handleRequest;
