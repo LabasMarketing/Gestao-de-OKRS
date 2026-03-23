@@ -19,4 +19,4 @@ COPY --from=builder /app/package.json ./package.json
 
 EXPOSE 8080
 
-CMD ["npm", "start", "--", "-p", "8080", "-H", "0.0.0.0"]
+CMD ["npm", "start", "--", "-p", "8080"]
