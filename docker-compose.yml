@@ -14,17 +14,12 @@ services:
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
     restart: always
+
   frontend:
     build: ./frontend
     container_name: okr_frontend
     ports:
       - "8080:8080"
-    volumes:
-      - ./frontend/app:/app/app
-      - ./frontend/public:/app/public
-      - ./frontend/tailwind.config.ts:/app/tailwind.config.ts
-      - /app/node_modules
-      - /app/.next
     environment:
       - WATCHPACK_POLLING=true
       - BACKEND_PRIVATE_IP=172.31.136.143
